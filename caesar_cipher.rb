@@ -20,8 +20,9 @@ def shift_character(character, shift_factor)
 end
 
 def caesar_cipher(string, shift_factor = 5)
-  string.length.times do |index|
-    string[index] = shift_character(string[index], shift_factor)
+  cipher = ""
+  string.each_char do |character|
+    cipher += shift_character(character, shift_factor)
   end
-  string
+  cipher
 end
