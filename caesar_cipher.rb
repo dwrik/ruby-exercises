@@ -1,4 +1,3 @@
-
 LETTERS = "abcdefghijklmnopqrstuvwxyz"
 
 def shift_character(character, shift_factor)
